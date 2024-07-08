@@ -29,6 +29,19 @@ There is a protocol used to communicate between the two processes.
 + read - if you simply type read in the other terminal, you can receive the input sent by the writer
 + exit - used to clean-up resources and to exit
 
+You will need to enter input in the waiting repl once you have run the program. Note that the >_ is not part of the message, it is the representation of the command prompt cursor.
+
+An example write operation would be
+```plaintext
+>_write Hello there
+```
+
+In the other terminal, one can receive(read) this message using
+
+```plaintext
+>_read
+```
+
 ***NOTE**
 
 This is a project in progress and changes will keep occuring...
